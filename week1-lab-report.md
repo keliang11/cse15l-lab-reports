@@ -27,7 +27,12 @@ Next, open the terminal in VSCode. Open the command pallete, type **select defau
 ![image](https://user-images.githubusercontent.com/122491370/211933762-b61f6390-4f25-48f3-b1cf-5bd468219f2a.png)
 
 
-In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters.
+In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters. You should get the question are you sure you want to continue connecting, which you should answer yes. Then it will ask for your password.
+
+**IMPORTANT:** Your password won't be visible when you're typing it, due to security reasons.
+
+![image](https://user-images.githubusercontent.com/122491370/211934829-1440f9cf-b850-463c-8afa-53ace159a6da.png)
+
 
 ![image](https://user-images.githubusercontent.com/122491370/211929927-f2b37e35-0c37-485a-baa7-15355008283a.png)
 
