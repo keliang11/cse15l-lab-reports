@@ -11,6 +11,8 @@ If your password change was successful, you should see the following page below.
 
 ![image](https://user-images.githubusercontent.com/122491370/211930276-07ac89c6-6b8b-4595-8a6c-8cabed45f49a.png)
 
+## Installing Visual Studio Code
+
 Next, install VSCode. I already had this instealled previously, but it is pretty straightforward. Go to https://code.visualstudio.com/ and follow the instructions.
 
 After successfully installing, you should be able to open a window like the one below.(SEE BELOW)
@@ -18,12 +20,14 @@ After successfully installing, you should be able to open a window like the one 
 
 ![image](https://user-images.githubusercontent.com/122491370/211929750-7e9af6d1-5656-4516-9743-a4e813aea728.png)
 
+## Remotely Conencting
+
 Next, open the terminal in VSCode. Open the command pallete, type **select default profile**. Select git bash, then click the plus sign to open a new bask terminal. 
 
 ![image](https://user-images.githubusercontent.com/122491370/211933762-b61f6390-4f25-48f3-b1cf-5bd468219f2a.png)
 
 
-In the terminal, `$ ssh cs15lwi23amg@ieng6.ucsd.edu`
+In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters.
 
 ![image](https://user-images.githubusercontent.com/122491370/211929927-f2b37e35-0c37-485a-baa7-15355008283a.png)
 
