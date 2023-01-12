@@ -1,5 +1,5 @@
 # Week 1 Lab Report
-## Kelsey Liang
+## Intro
 
 Hi! This tutorial is for future CSE 15L students about how to log into a course-specific account on ieng6.
 
@@ -13,7 +13,7 @@ If your password change was successful, you should see the following page below.
 
 ## Installing Visual Studio Code
 
-Next, install VSCode. I already had this instealled previously, but it is pretty straightforward. Go to https://code.visualstudio.com/ and follow the instructions.
+Next, install VSCode. I already had this installed previously, but it is pretty straightforward. Go to https://code.visualstudio.com/ and follow the instructions. This process went smoothly for me so I have nothing much to add here.
 
 After successfully installing, you should be able to open a window like the one below.(SEE BELOW)
 
@@ -22,7 +22,7 @@ After successfully installing, you should be able to open a window like the one 
 
 ## Remotely Conencting
 
-Next, open the terminal in VSCode. Open the command pallete, type select default profile. Select git bash, then click the plus sign to open a new bask terminal. 
+Next, open the terminal in VSCode. Open the command pallete, type select default profile. Select git bash, then click the plus sign to open a new bash terminal. 
 
 ![image](https://user-images.githubusercontent.com/122491370/211933762-b61f6390-4f25-48f3-b1cf-5bd468219f2a.png)
 
@@ -36,12 +36,18 @@ In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank 
 After typing your password correctly, you should see the below.
 
 
-![image](https://user-images.githubusercontent.com/122491370/211929927-f2b37e35-0c37-485a-baa7-15355008283a.png)
+![image](https://user-images.githubusercontent.com/122491370/211955813-b0de0c8b-37f7-421c-bebc-7f3f7763af3d.png)
+
+
+If you see the image below, followed by a notice, it means you probably typed your password incorrectly like I did the first couple of times. Make sure you type it in one go and hit enter!
+
+![image](https://user-images.githubusercontent.com/122491370/211956187-23d0a756-981c-4908-a081-043b5ac0f761.png)
+
 
 ## Trying Some Commands
 
 
-Now we can try running some commands such as `pwd`, `ls`, `cd`, etc. Below is an example of some commands I tried. You can also try to open a group member's directory (of course, it will demy access). When you want to log out of the remote server in your terminal, you can press ctrl+D or just type `exit`, as shown in the second image below.
+Now we can try running some commands such as `pwd`, `ls`, `cd`, etc. Below is an example of some commands I tried. You can also try to open a group member's directory (of course, it will deny access). When you want to log out of the remote server in your terminal, you can press ctrl+D or just type `exit`, as shown in the second image below.
 
 ![image](https://user-images.githubusercontent.com/122491370/211929975-b3516774-4cab-4129-b49b-0d216ee511c2.png)
 
