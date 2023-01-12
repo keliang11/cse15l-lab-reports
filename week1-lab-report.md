@@ -29,13 +29,19 @@ Next, open the terminal in VSCode. Open the command pallete, type select default
 
 In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters. You should get the question "are you sure you want to continue connecting", which you should answer yes. Then it will ask for your password.
 
-**IMPORTANT:** Your password won't be visible when you're typing it, due to security reasons. This stumped me when I was doing this lab, so don't let it fool you. It'll seem like you're not typing anything but actually it is 
+**IMPORTANT:** Your password won't be visible when you're typing it, due to security reasons. This stumped me when I was doing this lab, so don't let it fool you. It'll seem like you're not typing anything, but it actually is counting what you type.
 
 ![image](https://user-images.githubusercontent.com/122491370/211934829-1440f9cf-b850-463c-8afa-53ace159a6da.png)
+
+After typing your password correctly, you should see the below.
 
 
 ![image](https://user-images.githubusercontent.com/122491370/211929927-f2b37e35-0c37-485a-baa7-15355008283a.png)
 
+## Trying Some Commands
+
+
+Now we can try running some commands such as `pwd`, `ls`, `cd`, etc. Below is an example of some commands I tried. You can also try to open a group member's directory (of course, it will demy access). When you want to log out of the remote server in your terminal, you can press ctrl+D or just type `exit`, as shown in the second image below.
 
 ![image](https://user-images.githubusercontent.com/122491370/211929975-b3516774-4cab-4129-b49b-0d216ee511c2.png)
 
