@@ -3,7 +3,7 @@
 
 Hi! This tutorial is for future CSE 15L students about how to log into a course-specific account on ieng6.
 
-First go to https://sdacs.ucsd.edu/~icc/index.php and log in using your username and PID. Then, click on the account that starts with cs15lwi23.
+First go to [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) and log in using your username and PID. Then, click on the account that starts with cs15lwi23.
 
 Then click on the link to change your password. It will take you to a page where you type in your current password and your new password. Choose "no" for the changing TritonLink password and "yes" for changing course-specific account password. Then, press **enter** instead of clicking "check password".
 
@@ -20,14 +20,14 @@ After successfully installing, you should be able to open a window like the one 
 
 ![image](https://user-images.githubusercontent.com/122491370/211929750-7e9af6d1-5656-4516-9743-a4e813aea728.png)
 
-## Remotely Conencting
+## Remotely Connecting
 
-Next, open the terminal in VSCode. Open the command pallete, type select default profile. Select git bash, then click the plus sign to open a new bash terminal. 
+Next, open the terminal in VSCode. Open the command palette, type select default profile. Select git bash, then click the plus sign to open a new bash terminal. 
 
 ![image](https://user-images.githubusercontent.com/122491370/211933762-b61f6390-4f25-48f3-b1cf-5bd468219f2a.png)
 
 
-In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters. You should get the question "are you sure you want to continue connecting", which you should answer yes. Then it will ask for your password.
+In the terminal, type `$ ssh cs15lwi23___@ieng6.ucsd.edu` but fill in the blank line with your letters. You should get the question "are you sure you want to continue connecting", to which you should answer yes. Then it will ask for your password.
 
 **IMPORTANT:** Your password won't be visible when you're typing it, due to security reasons. This stumped me when I was doing this lab, so don't let it fool you. It'll seem like you're not typing anything, but it actually is counting what you type.
 
