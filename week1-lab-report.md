@@ -3,7 +3,7 @@
 
 Hi! This tutorial is for future CSE 15L students about how to log into a course-specific account on ieng6.
 
-First go to https://sdacs.ucsd.edu/~icc/index.php and log in using your username and PID. Then, click on the account that starts with cs15lwi23.
+First go to https://sdacs.ucsd.edu/~icc/index.php and log in using your username and Student ID. Then, click on the account that starts with cs15lwi23.
 
 Then click on the link to change your password. It will take you to a page where you type in your current password and your new password. Choose "no" for the changing TritonLink password and "yes" for changing course-specific account password. Then, press **enter** instead of clicking "check password".
 
