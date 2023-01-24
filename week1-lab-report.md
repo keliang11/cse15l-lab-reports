@@ -3,7 +3,9 @@
 
 Hi! This tutorial is for future CSE 15L students about how to log into a course-specific account on ieng6.
 
-First go to https://sdacs.ucsd.edu/~icc/index.php and log in using your username and Student ID. Then, click on the account that starts with cs15lwi23.
+First go to <https://sdacs.ucsd.edu/~icc/index.php> and log in using your username and Student ID. Then, click on the account that starts with cs15lwi23.
+
+![image](https://user-images.githubusercontent.com/122491370/214374370-114317dc-9a8a-440d-8097-9252a5bbae68.png)
 
 Then click on the link to change your password. It will take you to a page where you type in your current password and your new password. Choose "no" for the changing TritonLink password and "yes" for changing course-specific account password. Then, press **enter** instead of clicking "check password".
 
@@ -13,7 +15,7 @@ If your password change was successful, you should see the following page below.
 
 ## Installing Visual Studio Code
 
-Next, install VSCode. I already had this installed previously, but it is pretty straightforward. Go to https://code.visualstudio.com/ and follow the instructions. This process went smoothly for me so I have nothing much to add here.
+Next, install VSCode. I already had this installed previously, but it is pretty straightforward. Go to <https://code.visualstudio.com/> and follow the instructions. This process went smoothly for me so I have nothing much to add here.
 
 After successfully installing, you should be able to open a window like the one below.(SEE BELOW)
 
@@ -22,7 +24,11 @@ After successfully installing, you should be able to open a window like the one 
 
 ## Remotely Connecting
 
-Next, open the terminal in VSCode. Open the command palette, type select default profile. Select git bash, then click the plus sign to open a new bash terminal. 
+Next, open the terminal in VSCode. Open the command palette using `Ctrl` + `Shift` + `P`, type select default profile and select it. 
+
+![image](https://user-images.githubusercontent.com/122491370/214375099-8ef4b446-93e8-4958-ad14-5f568bdb9387.png)
+
+Select git bash, then click the plus sign to open a new bash terminal. 
 
 ![image](https://user-images.githubusercontent.com/122491370/211933762-b61f6390-4f25-48f3-b1cf-5bd468219f2a.png)
 
@@ -47,7 +53,9 @@ If you see the image below, followed by a notice, it means you probably typed yo
 ## Trying Some Commands
 
 
-Now we can try running some commands such as `pwd`, `ls`, `cd`, etc. Below is an example of some commands I tried. You can also try to open a group member's directory (of course, it will deny access). When you want to log out of the remote server in your terminal, you can press ctrl+D or just type `exit`, as shown in the second image below.
+Now we can try running some commands such as `pwd`, `ls`, `cd`, etc. Below is an example of some commands I tried. Typing `pwd` prints the working directory, `ls` lists out the files in the current directory, `cd..` moves the directory back one directory.
+
+You can also try to open a group member's directory by typing `ls /home/linux/ieng6/cs15lwi23/cs15lwi23xx` but replace `xx` with the group member's username (of course, it will deny access). When you want to log out of the remote server in your terminal, you can press `Ctrl`+ `D` or just type `exit`, as shown in the second image below.
 
 ![image](https://user-images.githubusercontent.com/122491370/211929975-b3516774-4cab-4129-b49b-0d216ee511c2.png)
 
