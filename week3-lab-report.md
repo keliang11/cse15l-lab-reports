@@ -62,11 +62,22 @@ I checked my files and the repository to make sure it was in wavelet, and I coul
 
 # Part 2 - Two Bugs
 
-In this part, I will choose 2 of the bugs from different files and show:
+In this part, I will choose 2 of the bugs from different files and show: the failure-inducing input (the code of the test), the symptom (the failing test output), the bug (the code fix needed), and the connection between the symptom and the bug.
 
-1. The failure-inducing input (the code of the test)
-2. The symptom (the failing test output)
-3. The bug (the code fix needed)
-4. The connection between the symptom and the bug
+The first bug is from the reversed method in ArrayExmaples.java and the tester is testReversed in ArrayTests.java. The purpose of the reverse method is to take an array of integers and return a new array with the elements of the input array in reverse order.
 
-The first bug is from the reversed method in ArrayExmaples.java and the tester is testReversed in ArrayTests.java.
+The test I made is to input a simple array of `{1, 2, 3,}` into the method. The expected output was `{3, 2, 1}` but the actual output differed at the first index. 
+
+![image](https://user-images.githubusercontent.com/122491370/214962522-925800e0-1c20-4121-a92c-68ed79624b14.png)
+
+The bug was actually very simple. If you look at the code in the for loop and the return statement, the `arr` and `newArray` is actually switched.
+
+![image](https://user-images.githubusercontent.com/122491370/214963640-b9d84036-be67-44d5-a7b9-7b7e50068c4f.png)
+
+Here's a screenshot of the code after I fixed the bug.
+
+![image](https://user-images.githubusercontent.com/122491370/214962979-2e752b50-09b8-4245-8265-2690a5972511.png)
+
+The bug caused the elements to be copied from the empty new array into the input array, when it should be the other away around. It also returned the existing array, which now has the wrong elements in it. After the bug fix, the method was able to pass the test.
+
+![image](https://user-images.githubusercontent.com/122491370/214964325-7a730953-bff8-44f8-a19f-208a38b69c6d.png)
