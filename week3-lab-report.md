@@ -60,9 +60,11 @@ When I tried to use this program, I ran into some problems that I couldn't figur
 
 I checked my files and the repository to make sure it was in wavelet, and I couldn't figure out why it wasn't working.
 
-# Part 2 - Two Bugs
+## Part 2 - Two Bugs
 
 In this part, I will choose 2 of the bugs from different files and show: the failure-inducing input (the code of the test), the symptom (the failing test output), the bug (the code fix needed), and the connection between the symptom and the bug.
+
+### Bug #1
 
 The first bug is from the reversed method in ArrayExmaples.java and the tester is testReversed in ArrayTests.java. The purpose of the reverse method is to take an array of integers and return a new array with the elements of the input array in reverse order.
 
@@ -81,3 +83,5 @@ Here's a screenshot of the code after I fixed the bug.
 The bug caused the elements to be copied from the empty new array into the input array, when it should be the other away around. It also returned the existing array, which now has the wrong elements in it. After the bug fix, the method was able to pass the test.
 
 ![image](https://user-images.githubusercontent.com/122491370/214964325-7a730953-bff8-44f8-a19f-208a38b69c6d.png)
+
+### Bug #2
