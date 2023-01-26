@@ -68,7 +68,7 @@ In this part, I will choose 2 of the bugs from different files and show: the fai
 
 The first bug is from the reversed method in ArrayExmaples.java and the tester is testReversed in ArrayTests.java. The purpose of the reverse method is to take an array of integers and return a new array with the elements of the input array in reverse order.
 
-The test I made is to input a simple array of `{1, 2, 3,}` into the method. The expected output was `{3, 2, 1}` but the actual output differed at the first index. 
+The test I made is to input a simple array of `{1, 2, 3,}` into the method. The expected output was `{3, 2, 1}` but the actual output differed at the first index, where the expected was 3 but the actual was 0.
 
 ![image](https://user-images.githubusercontent.com/122491370/214962522-925800e0-1c20-4121-a92c-68ed79624b14.png)
 
@@ -85,3 +85,25 @@ The bug caused the elements to be copied from the empty new array into the input
 ![image](https://user-images.githubusercontent.com/122491370/214964325-7a730953-bff8-44f8-a19f-208a38b69c6d.png)
 
 ### Bug #2
+
+The second bug is from the merge method in ListExamples.java and the tester is testMerge in ListTests.java. This method is supposed to take two sorted lists of strings and return a new list that has all the strings in both lists in sorted order.
+
+For the test, I made two lists and put them in the merge method. The first list has "a" and "c" and the second list has "b" and "d" so the expected output should be "a" "b" "c" "d" in that order.
+
+![image](https://user-images.githubusercontent.com/122491370/214966128-6d2400d5-d199-4c44-a88b-6381830f1a29.png)
+
+However, when I ran the test, it took an unusually long time and the result was an out of memory error. From first look it seemed like it does not take into account the differing lengths of list1 and list2. It was hard to pinpoint exactly what was causing the out of memory error but I guessed it might have something to do with the while loops. I ended up rewriting the code using some of the code that was already there:
+
+If list2 is smaller than list1, it will sort all the elements until list2 has been completely sorted. Then, it will add the remaining elements in list1.
+
+![image](https://user-images.githubusercontent.com/122491370/214973356-25b8a9d0-4a99-4945-850f-eb8c157fa6c8.png)
+
+Vice-versa, if list1 is smaller than list2, it will sort all the elements until list1 has been completely sorted. Then, it will add the remaining elements in list2.
+
+![image](https://user-images.githubusercontent.com/122491370/214973396-af8d7335-10df-42c9-800e-2956ec4e4a12.png)
+
+If list1 and list2 are the same size, it will sort all the elements of one array then see which index is smaller and sort the remaining elements of that array.
+
+![image](https://user-images.githubusercontent.com/122491370/214973478-c5ce7a55-fde9-4417-8703-e62e2bc2357e.png)
+
+I ran the same test and well as a couple of tests with different lengths for both lists and they passed.
