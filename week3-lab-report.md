@@ -62,7 +62,8 @@ The failure inducing input for test I made is to input a simple array of `{1, 2,
     int[] input2 = {1, 2, 3};
     assertArrayEquals(new int[]{3, 2, 1 }, 
     ArrayExamples.reversed(input2));
-  }```
+  }
+  ```
   
   The test that doesn't induce failure is an empty array.
   
@@ -71,7 +72,8 @@ The failure inducing input for test I made is to input a simple array of `{1, 2,
     int[] input2 = {};
     assertArrayEquals(new int[]{}, 
     ArrayExamples.reversed(input2));
-  }```
+  }
+  ```
   
 For the failure inducing test, the expected output was `{3, 2, 1}` but the actual output differed at the first index, where the expected was 3 but the actual was 0.
   
@@ -85,7 +87,8 @@ The bug was actually very simple. If you look at the code in the for loop and th
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
-  }```
+  }
+  ```
 
 Below is the code after I fixed the bug.
 
@@ -95,7 +98,8 @@ Below is the code after I fixed the bug.
       newArray[i] = arr[arr.length - i - 1];
     }
     return newArray;
-  }```
+  }
+  ```
 
 The bug caused the elements to be copied from the empty new array into the input array, when it should be the other away around. It also returned the existing array, which now has the wrong elements in it. After the bug fix, the method was able to pass the test.
 
