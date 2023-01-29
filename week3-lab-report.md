@@ -1,8 +1,6 @@
 # Week 3 Lab Report
 
-## Part 1 - Simplest Search Engine
-
-In week 2 lab, I created a simple search engine. Below is my code:
+## Part 1 - StringServer
 
 ```
 import java.io.IOException;
@@ -108,3 +106,5 @@ static int[] reversed(int[] arr) {
 The bug caused the elements to be copied from the empty new array into the input array, when it should be the other away around. It also returned the existing array, which now has the wrong elements in it. After the bug fix, the method was able to pass the test.
 
 ## Part 3
+
+Mostly everything in lab 2 was new to me, such as building and running a server on a remote computer. I haven't done any of that before. Lab 3 debugging was a bit more familiar to me but it was helpful to break things down into symtoms, bugs, failure-inducing inputs.
