@@ -41,7 +41,7 @@ class StringServer {
 }
 ```
 
-The structure of it was based on the NumberServer.java that we did in week 2 lab. For this search engine, I decided to use a List to keep track of the strings. In the handleRequest method, if the URL path contains `/add-message`, it will take the string that comes after `=` and add it to the List. Then, it will go through each string in the List and print it out on a new line. The main method of the SearchEngine class is the same as NumberServer, where it starts a new server with a port number.
+The structure of it was based on the NumberServer.java that we did in week 2 lab. For this search engine, I decided to use a List to keep track of the strings. In the handleRequest method, if the URL path contains `/add-message`, it will take the string that comes after `=` and add it to the List. Then, it will go through each string in the List and print it out on a new line. The main method of the StringServer class is the same as NumberServer, where it starts a new server with a port number.
 
 When I tried to use this program, I ran into some problems that I couldn't figure out, so I was unable to actually run the code. I tried to run the commands `javac Server.java StringServer.java` and `java StringServer` similar to the week 2 lab. It said that StringServer.java was not found.
 
