@@ -1,6 +1,6 @@
-## Week 5 - Lab Report 3
+# Week 5 - Lab Report 3
 
-# Using the grep command to find the text
+## Using the grep command to find the text
 
 `grep "string" <directory>`
 
@@ -11,7 +11,7 @@ This is a command for finding all the intances in all the files in the directory
 The second example finds the instances of the string "vistas" in berlitz2 and prints out the paragraphs containing them.
 ![image](https://user-images.githubusercontent.com/122491370/217716203-7f50395e-f887-4cb0-9d08-3d50b1ccfe34.png)
 
-# Using the grep command to find the file paths
+## Using the grep command to find the file paths
 
 `grep -r -l "string"`
 
@@ -23,7 +23,7 @@ The second example prints out the paths of the files in berlitz2 that contain th
 
 ![image](https://user-images.githubusercontent.com/122491370/217707758-fc2749c0-cf16-4f29-8c06-07f5132827ee.png)
 
-# Using the grep comment to find the number of files
+## Using the grep comment to find the number of files
 
 `grep -l "string" * | wc -l`
 
@@ -35,7 +35,7 @@ In the second example, I went into berlitz2 then used the command, which returne
 
 ![image](https://user-images.githubusercontent.com/122491370/217707506-130328a7-4837-4b37-9b6d-f6993b5b87a4.png)
 
-# Using the grep command to find the number of lines
+## Using the grep command to find the number of lines
 
 `grep -r "string" | grep -c '' `
 
