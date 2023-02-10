@@ -11,7 +11,6 @@ import java.util.ArrayList;
 class Handler implements URLHandler {
 
     List<String> strings = new ArrayList<String>();
-    int size = 0;
 
     public String handleRequest(URI url){
     
@@ -42,9 +41,9 @@ class StringServer {
 ```
 ![image](https://user-images.githubusercontent.com/122491370/218005014-65ec020d-5a77-489e-bcfb-5925dbc3c254.png)
 
-The structure of it was based on the NumberServer.java that we did in week 2 lab. For this program, I decided to use a List to keep track of the strings. In the handleRequest method, if the URL path contains `/add-message`, it will take the string that comes after `=` and add it to the List. Then, it will take all the strings and join them by concatenating a new line "\n" after each string. The main method of the StringServer class is the same as NumberServer, where it starts a new server with a port number.
+The structure of it was based on the NumberServer.java that we did in week 2 lab. For this program, I decided to use a List called "strings" to keep track of the strings. In the handleRequest method, if the URL path contains `/add-message`, it will take the string that comes after `=` and add it to the List. Then, it will take all the strings and join them by concatenating a new line "\n" after each string. The main method of the StringServer class is the same as NumberServer, where it starts a new server with a port number.
 
-In the below screenshot, this is the first string that is entered after running the program. The string "Hello" is after the = sign so handleRequest just adds that string to the List and prints the List.
+In the below screenshot, this is the first string that is entered after running the program. The string "Hello" is after the `=` so handleRequest just adds that string to the List and prints the List.
 ![image](https://user-images.githubusercontent.com/122491370/218002674-92a60b1c-2274-48d6-b6e4-27830c40fbae.png)
 
 When you enter the second string "world", it is added to the List after "Hello". The String join method takes the first string, then concatenates a new line, then takes the next string in the List, and prints it out as seen in the below screenshot.
