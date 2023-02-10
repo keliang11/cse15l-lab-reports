@@ -4,14 +4,23 @@
 
 `grep "string" <directory>`
 
+This is a command for finding all the intances in all the files in the directory that contain the string and prints out each chunk of text. The first example finds the intances of the string "Luacayans" in berlitz2 and prints out the paragraphs containing them.
+
 ![image](https://user-images.githubusercontent.com/122491370/217715966-06780418-5968-4210-96fe-01c78b816b2b.png)
+
+The second example finds the instances of the string "vistas" in berlitz2 and prints out the paragraphs containing them.
 ![image](https://user-images.githubusercontent.com/122491370/217716203-7f50395e-f887-4cb0-9d08-3d50b1ccfe34.png)
 
 # Using the grep command to find the file paths
 
 `grep -r -l "string"`
-Returns the path of the files that contain the string.
+
+This is a command that returns the path of the files in the current working directory that contain the string. The first example prints out the paths of the files in written_2 that contain the string "vistas".
+
 ![image](https://user-images.githubusercontent.com/122491370/217707706-db3b9266-a3fe-41cf-821d-cc953d9d0641.png)
+
+The second example pronts out the paths of the files in berlitz2 that contain the string "vistas", which in this case is just the file names.
+
 ![image](https://user-images.githubusercontent.com/122491370/217707758-fc2749c0-cf16-4f29-8c06-07f5132827ee.png)
 
 # Using the grep comment to find the number of files
