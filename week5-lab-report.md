@@ -20,11 +20,11 @@ In this second example, it prints all the lines in the same file that don't cont
 
 The '-r' option is the resursive search, which looks for all the files containing the "string" in the current directory and also all the subdirectories.
 
-The first example prints out the paths of the files in written_2 that contain the string "vistas". Notice that this includes files from all the subdirectories within written_2, including results from both bertlitz1 and berlitz2.
+The first example prints out the paths of the files in written_2 that contain the string "vistas". Written_2 itself does not contain any files, so it goes into the subdirectories. Notice that this includes files from all the subdirectories within written_2, including results from both bertlitz1 and berlitz2.
 
 ![image](https://user-images.githubusercontent.com/122491370/217707706-db3b9266-a3fe-41cf-821d-cc953d9d0641.png)
 
-In the second example, the current working directory is new berlitz2. using the same command, it prints out the names of the files in just berlitz2 that contain "vistas", since there are no subdirectories under berlitz2.
+In the second example, the current working directory is new berlitz2. Using the same command, it prints out the names of the files in just berlitz2 that contain "vistas", since there are no subdirectories under berlitz2.
 
 ![image](https://user-images.githubusercontent.com/122491370/217707758-fc2749c0-cf16-4f29-8c06-07f5132827ee.png)
 
@@ -32,7 +32,11 @@ In the second example, the current working directory is new berlitz2. using the 
 
 `grep -l "string" * | wc -l`
 
-This is a command that I found from StackExchange. It finds the *number of files* in the current working directory that contain a certan string. The first example prints zero because there are no files that are directly under skill-demo1-data which contain the string "Lucayans." 
+<https://unix.stackexchange.com/questions/6648/number-of-files-containing-a-given-string#:~:text=grep%20%2Dl%20%22string%22%20*,tell%20you%20how%20many%20matched.&text=Save%20this%20answer.,-Show%20activity%20on>
+
+This is a command that I found from StackExchange. It finds the *number of files* in the current working directory that contain a certain string. The `-l` outputs just the filenames that contain the "string", and the `wc` counts how many files. 
+
+The first example prints zero because there are no files that are directly under skill-demo1-data which contain the string "Lucayans." 
 
 ![image](https://user-images.githubusercontent.com/122491370/217704120-0399b497-5337-41a8-89df-0134689264fb.png)
 
@@ -44,10 +48,14 @@ In the second example, I went into berlitz2 then used the command, which returne
 
 `grep -r "string" | grep -c '' `
 
-I got this command from asking ChatGPT how to find the number of files, which is actually the wrong command. Instead it answered how to find the *number of lines* that contain the certain string. The first example tells you there are 16 lines containing the string "vistas" in all of written_2.
+The `-c` option counts the number of lines that contain the "string". The `-r` is recursive search, so it can find the total number of lines in all the subdirectories under the current directory that contain the "string".
+
+I got this command from asking ChatGPT how to find the number of files, not lines, which is actually a different command. ChatGPT gave a result different than what I was looking for.
+
+The first example tells you there are 16 lines containing the string "vistas" in all of written_2, including all it's subdirectories.
 
 ![image](https://user-images.githubusercontent.com/122491370/217708312-e194cd3e-ddfd-46d1-ab53-9b27ad98e497.png)
 
-The second example tells you there are 6 lines containing the string "vistas" in berlitz2. Note that this is a different result from what we got when using the previous command `grep -l "string" * | wc -l` to find the number of *files*.
+Using the same command, the second example tells you there are 6 lines containing the string "vistas" in berlitz2. Note that this is a different result from what we got when using the previous command `grep -l "string" * | wc -l` to find the number of *files*. This is useful for when you want to see how often a certain words pops up rather than which files contain it.
 
 ![image](https://user-images.githubusercontent.com/122491370/217708475-7d9c57b9-978c-4232-811f-bc7e950e5da1.png)
