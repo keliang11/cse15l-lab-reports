@@ -18,7 +18,7 @@ In this second example, it prints all the lines in the same file that don't cont
 
 `grep -r -l "string"`
 
-The '-r' option is the resursive search, which looks for all the files containing the "string" in the current directory and also all the subdirectories.
+The `-r` option is the resursive search, which looks for all the files containing the "string" in the current directory and also all the subdirectories.
 
 The first example prints out the paths of the files in written_2 that contain the string "vistas". Written_2 itself does not contain any files, so it goes into the subdirectories. Notice that this includes files from all the subdirectories within written_2, including results from both bertlitz1 and berlitz2.
 
