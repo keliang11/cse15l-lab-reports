@@ -1,25 +1,30 @@
 # Week 5 - Lab Report 3
 
-## Using the grep command to find the text
+## Using the grep command to reverse search a string
 
-`grep "string" <directory>`
+`grep -v "string" <file>`
 
-This is a command for finding all the intances in all the files in the directory that contain the string and prints out each chunk of *text that contains the string*. The first example finds the intances of the string "Luacayans" in berlitz2 and prints out the paragraphs containing them.
+This is one of the commands that I got by asking ChatGPT what are some different ways to use the grep command. I found this one to be the most interesting.
 
-![image](https://user-images.githubusercontent.com/122491370/217715966-06780418-5968-4210-96fe-01c78b816b2b.png)
+The `-v` option prints a negative result. Instead of printing all the lines in `<file>` that contain "string", it prints all the lines that DON'T contain "string". This command IS case sensitive, which I found out with the two examples below.
 
-The second example finds the instances of the string "vistas" in berlitz2 and prints out the paragraphs containing them.
-![image](https://user-images.githubusercontent.com/122491370/217716203-7f50395e-f887-4cb0-9d08-3d50b1ccfe34.png)
+In this first example, it prints all the lines in file Bahamas-History.txt that don't contain the string "a". Pretty much every line contains a lowercase "a" except for these two short lines, one of which contain an UPPERcase "A".
+![image](https://user-images.githubusercontent.com/122491370/220805424-89490494-f1d9-4f38-8e51-f4dd05696994.png)
+
+In this second example, it prints all the lines in the same file that don't contain the string "A". It printed out many lines that do not contain "A", and a lot of them do contain the lowercase "a".
+![image](https://user-images.githubusercontent.com/122491370/220805571-6263b635-bc0a-49fd-b44e-5c1a09463e9e.png)
 
 ## Using the grep command to find the file paths
 
 `grep -r -l "string"`
 
-This is a command that returns the *path of the files* in the current working directory that contain the string. The first example prints out the paths of the files in written_2 that contain the string "vistas".
+The '-r' option is the resursive search, which looks for all the files containing the "string" in the current directory and also all the subdirectories.
+
+The first example prints out the paths of the files in written_2 that contain the string "vistas". Notice that this includes files from all the subdirectories within written_2, including results from both bertlitz1 and berlitz2.
 
 ![image](https://user-images.githubusercontent.com/122491370/217707706-db3b9266-a3fe-41cf-821d-cc953d9d0641.png)
 
-The second example prints out the paths of the files in berlitz2 that contain the string "vistas", which in this case is just the file names.
+In the second example, the current working directory is new berlitz2. using the same command, it prints out the names of the files in just berlitz2 that contain "vistas", since there are no subdirectories under berlitz2.
 
 ![image](https://user-images.githubusercontent.com/122491370/217707758-fc2749c0-cf16-4f29-8c06-07f5132827ee.png)
 
