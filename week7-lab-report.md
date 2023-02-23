@@ -46,7 +46,7 @@ Running the tests was a big confusing for me because this had been a reoccuring 
 
 ### Edit code file
 
-To edit the code file, I used `nano ListExamples.java`, then pressed the down arrow until I got to line 42 where the bug is. Then I pressed the right arrow 12 times until the cursor is right after "index1", backspace and replace the 1 with a 2, as shown in the following screenshot:
+To edit the code file, I used `nano ListExamples.java` `<enter>`, then pressed the "down" arrow until I got to line *42* where the bug is. Then I pressed the "right" arrow *12* times until the cursor is right after "index1", `<backspace>` and replace the "1" with a "2", as shown in the following screenshot:
 
 ![image](https://user-images.githubusercontent.com/122491370/220846850-a0273566-43d9-4cbb-ba0b-8da161c9376d.png)
 
@@ -54,9 +54,9 @@ Then I pressed `ctrl + o <enter>` to save the change and `ctrl + x` to exit edit
 
 ### Run tests successfully
 
-After editing the code file, I pressed the up arrow three times to automatically get the thrid last command I typed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and press `<enter>`.
+After editing the code file, I pressed the "up" arrow *three* times to automatically get the thrid last command I typed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and press `<enter>`.
 
-Then, I pressed the up arrow another three times to get `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples` and press `<enter>` to run the test again. This time the test ran successfully:
+Then, I pressed the "up" arrow another *three* times to get `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples` and press `<enter>` to run the test again. This time the test ran successfully:
 
 ![image](https://user-images.githubusercontent.com/122491370/220849325-82c25a69-50cd-4970-bc4a-86afc2685c6f.png)
 
