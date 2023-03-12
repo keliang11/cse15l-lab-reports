@@ -23,6 +23,16 @@ In the second example, we are searching for the directory called "berlitz2".
 ### Find file using name and ignoring case
 `find /directory -iname (filename.txt)`
 This command is similar to the first command, but it uses `-iname` instead of `-name` to ignore case.
-In the first example, 
+In the first example, we are searching for the file called "Bahamas-History.txt" with the uppercase letters.
 ![image](https://user-images.githubusercontent.com/122491370/224527662-5346102e-f785-4f4a-8a13-1d765fd92dc1.png)
+In the next example, we are searching for "bahamas-history.txt" which is is all lowercase letters. It returns the file "Bahamas-History.txt" since it is not case sensitive.
 ![image](https://user-images.githubusercontent.com/122491370/224527667-6384b810-6d4b-4c80-992b-7746224dfcbd.png)
+
+### Find filenames containing a certain string
+`find /directory -iname "*string"`
+This command finds all the file names in a directory which contain a certain string.
+In the following example, we are searching for all the files in "written_2" that contain "history.txt". The asterisk indicates the portion of the string before "history.txt".
+![image](https://user-images.githubusercontent.com/122491370/224530313-26c27839-039c-4fbf-9928-0df2664c2ad6.png)
+The next example searches all the files in "written_2" that contain ".txt".
+![image](https://user-images.githubusercontent.com/122491370/224530408-6c622985-e81a-4989-b2fb-5af70759bcc8.png)
+
